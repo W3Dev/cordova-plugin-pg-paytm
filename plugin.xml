@@ -4,25 +4,21 @@
         id="cordova-plugin-paytm"
         version="0.0.10">
 
-  <name>PayTM</name>
+  <name>PayTM Payment Gateway</name>
 
   <description>
     This Plugin allows you to integrate PayTM application into a cordova app.
   </description>
 
-  <author>Arun Yokesh Kumar</author>
+  <author>Ashutosh Kumar</author>
 
   <license>MIT</license>
 
   <keywords>PayTM, Payment, Gateway, Mobile</keywords>
 
-  <repo>https://github.com/ArunYogi/paytm-cordova-plugin.git</repo>
+  <repo>https://github.com/W3Dev/cordova-plugin-pg-paytm.git</repo>
 
-  <issue>https://github.com/ArunYogi/paytm-cordova-plugin/issues</issue>
-
-  <preference name="MERCHANT_ID" />
-  <preference name="INDUSTRY_TYPE_ID" />
-  <preference name="WEBSITE" />
+  <issue>https://github.com/W3Dev/cordova-plugin-pg-paytm/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
@@ -44,15 +40,7 @@
         <plugin name="PayTMCordova" value="PayTMCordova"/>
       </feature>
     </config-file>
-    <config-file target="*-Info.plist" parent="PayTMMerchantID">
-        <string>$MERCHANT_ID</string>
-    </config-file>
-    <config-file target="*-Info.plist" parent="PayTMIndustryTypeID">
-        <string>$INDUSTRY_TYPE_ID</string>
-    </config-file>
-    <config-file target="*-Info.plist" parent="PayTMWebsite">
-        <string>$WEBSITE</string>
-    </config-file>
+  
 
     <header-file src="src/ios/PayTM/Headers/PaymentsSDK.h"/>
     <header-file src="src/ios/PayTM/Headers/PGMerchantConfiguration.h"/>
@@ -76,12 +64,7 @@
     </config-file>
 
     <source-file src="src/android/res/values/paytmcordova.xml" target-dir="res/values" />
-    <config-file target="app/src/main/res/values/paytmcordova.xml" parent="/*">
-        <string name="paytm_merchant_id">$MERCHANT_ID</string>
-        <string name="paytm_industry_type_id">$INDUSTRY_TYPE_ID</string>
-        <string name="paytm_website">$WEBSITE</string>
-    </config-file>
-
+ 
     <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
         <uses-permission android:name="android.permission.INTERNET"/>
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
