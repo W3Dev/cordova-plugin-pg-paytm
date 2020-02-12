@@ -19,9 +19,9 @@
   <repo>https://github.com/W3Dev/cordova-plugin-pg-paytm.git</repo>
   <issue>https://github.com/W3Dev/cordova-plugin-pg-paytm/issues</issue>
 
-  <preference name="MERCHANT_ID" />
+  <!-- <preference name="MERCHANT_ID" />
   <preference name="INDUSTRY_TYPE_ID" />
-  <preference name="WEBSITE" />
+  <preference name="WEBSITE" /> -->
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
