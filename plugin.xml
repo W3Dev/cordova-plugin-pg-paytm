@@ -68,9 +68,9 @@
 
     <source-file src="src/android/res/values/paytmpgcordova.xml" target-dir="res/values" />
     <config-file target="app/src/main/res/values/paytmpgcordova.xml" parent="/*">
-        <string name="paytm_merchant_id"></string>
-        <string name="paytm_industry_type_id"></string>
-        <string name="paytm_website"></string>
+        <string name="paytm_merchant_id">$PAYTM_MERCHANT_ID</string>
+        <string name="paytm_industry_type_id">$PAYTM_INDUSTRY_TYPE_ID</string>
+        <string name="paytm_website">$PAYTM_WEBSITE</string>
     </config-file>
  
     <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
