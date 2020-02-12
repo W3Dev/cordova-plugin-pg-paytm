@@ -67,10 +67,10 @@
     </config-file>
 
     <source-file src="src/android/res/values/paytmpgcordova.xml" target-dir="res/values" />
-     <config-file target="app/src/main/res/values/paytmpgcordova.xml" parent="/*">
-        <string name="paytm_merchant_id">$MERCHANT_ID</string>
-        <string name="paytm_industry_type_id">$INDUSTRY_TYPE_ID</string>
-        <string name="paytm_website">$WEBSITE</string>
+    <config-file target="app/src/main/res/values/paytmpgcordova.xml" parent="/*">
+        <string name="paytm_merchant_id"></string>
+        <string name="paytm_industry_type_id"></string>
+        <string name="paytm_website"></string>
     </config-file>
  
     <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
