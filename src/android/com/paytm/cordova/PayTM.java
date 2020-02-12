@@ -33,9 +33,15 @@ public class PayTM extends CordovaPlugin {
     protected void pluginInitialize() {
         
 
-        PAYTM_MERCHANT_ID = cordova.getActivity().getIntent().getStringExtra("PAYTM_MERCHANT_ID");
-        PAYTM_INDUSTRY_TYPE_ID = cordova.getActivity().getIntent().getStringExtra("PAYTM_INDUSTRY_TYPE_ID");
-        PAYTM_WEBSITE =  cordova.getActivity().getIntent().getStringExtra("PAYTM_WEBSITE");
+        int appResId = cordova.getActivity().getResources().getIdentifier("paytm_merchant_id", "string",
+                cordova.getActivity().getPackageName());
+        PAYTM_MERCHANT_ID = cordova.getActivity().getString(appResId);
+        appResId = cordova.getActivity().getResources().getIdentifier("paytm_industry_type_id", "string",
+                cordova.getActivity().getPackageName());
+        PAYTM_INDUSTRY_TYPE_ID = cordova.getActivity().getString(appResId);
+        appResId = cordova.getActivity().getResources().getIdentifier("paytm_website", "string",
+                cordova.getActivity().getPackageName());
+        PAYTM_WEBSITE = cordova.getActivity().getString(appResId);
     
     }
 

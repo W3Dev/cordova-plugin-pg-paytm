@@ -17,8 +17,11 @@
   <keywords>PayTM, Payment, Gateway, Mobile</keywords>
 
   <repo>https://github.com/W3Dev/cordova-plugin-pg-paytm.git</repo>
-
   <issue>https://github.com/W3Dev/cordova-plugin-pg-paytm/issues</issue>
+
+  <preference name="MERCHANT_ID" />
+  <preference name="INDUSTRY_TYPE_ID" />
+  <preference name="WEBSITE" />
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
@@ -64,6 +67,11 @@
     </config-file>
 
     <source-file src="src/android/res/values/paytmpgcordova.xml" target-dir="res/values" />
+     <config-file target="app/src/main/res/values/paytmpgcordova.xml" parent="/*">
+        <string name="paytm_merchant_id">$MERCHANT_ID</string>
+        <string name="paytm_industry_type_id">$INDUSTRY_TYPE_ID</string>
+        <string name="paytm_website">$WEBSITE</string>
+    </config-file>
  
     <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
         <uses-permission android:name="android.permission.INTERNET"/>

@@ -1,3 +1,5 @@
+
+
 module.exports = {
     startPayment: function(options, successCallback, failureCallback) {
         cordova.exec(successCallback,
