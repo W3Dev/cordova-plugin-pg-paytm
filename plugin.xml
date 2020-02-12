@@ -63,7 +63,7 @@
       </feature>
     </config-file>
 
-    <source-file src="src/android/res/values/paytmcordova.xml" target-dir="res/values" />
+    <source-file src="src/android/res/values/paytmpgcordova.xml" target-dir="res/values" />
  
     <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
         <uses-permission android:name="android.permission.INTERNET"/>
