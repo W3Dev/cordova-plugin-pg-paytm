@@ -1,41 +1,46 @@
 {
-  "version": "0.0.10",
-  "name": "cordova-plugin-pg-paytm",
-  "cordova_name": "PayTM",
-  "description": "This Plugin allows you to integrate PayTM application into a cordova app.",
-  "license": "MIT",
-  "homepage": "https://github.com/W3Dev/cordova-plugin-pg-paytm#readme",
-  "author": "Ashutosh Kumar",
-  "repository": {
-      "type": "git",
-      "url": "git+https://github.com/W3Dev/cordova-plugin-pg-paytm.git"
-  },
-  "bugs": {
-      "url": "https://github.com/W3Dev/cordova-plugin-pg-paytm/issues"
-  },
-  "cordova": {
-      "id": "cordova-plugin-pg-paytm",
-      "platforms": [
-          "android",
-          "ios"
-      ]
-  },
-  "keywords": [
-      "ecosystem:cordova",
-      "cordova-android",
-      "cordova-ios",
-      "PayTM",
-      "Payment",
-      "Gateway",
-      "Mobile"
-  ],
-  "platforms": [
-      "ios",
-      "android"
-  ],
-  "engines": {
-      "cordovaDependencies": {
-          "0.0.2": { "cordova": ">=3.4.0" }
-      }
-  }
+    "version": "0.0.10",
+    "name": "cordova-plugin-pg-paytm",
+    "cordova_name": "PayTM",
+    "description": "This Plugin allows you to integrate PayTM application into a cordova app.",
+    "license": "MIT",
+    "homepage": "https://github.com/W3Dev/cordova-plugin-pg-paytm#readme",
+    "author": "Ashutosh Kumar",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/W3Dev/cordova-plugin-pg-paytm.git"
+    },
+    "bugs": {
+        "url": "https://github.com/W3Dev/cordova-plugin-pg-paytm/issues"
+    },
+    "cordova": {
+        "id": "cordova-plugin-pg-paytm",
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios",
+        "PayTM",
+        "Payment",
+        "Gateway",
+        "Mobile"
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ],
+    "engines": {
+        "cordovaDependencies": {
+            "0.0.2": {
+                "cordova": ">=3.4.0"
+            }
+        }
+    },
+    "devDependencies": {
+        "plugman": "^3.0.1"
+    }
 }
